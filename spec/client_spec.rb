@@ -12,6 +12,15 @@ describe Queued::Client do
     expect { client.get '/foo' }.to raise_error(Queued::InternalServerError)
   end
 
+  it 'sends auth info' do
+    stub_request(:get, 'http://:testing@example.com/foo')
+
+    client = Queued::Client.new('http://example.com', auth: 'testing')
+    client.get '/foo'
+
+    assert_requested :get, 'http://:testing@example.com/foo', times: 1
+  end
+
   describe '#queue' do
     it 'should return queue' do
       expect(client.queue(:foo)).to be_a(Queued::Queue)

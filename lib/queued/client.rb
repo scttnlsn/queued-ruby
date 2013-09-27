@@ -15,6 +15,10 @@ module Queued
         
         conn.adapter Faraday.default_adapter
       end
+
+      if @auth
+        @conn.basic_auth('', @auth)
+      end
     end
 
     def queue(name)
