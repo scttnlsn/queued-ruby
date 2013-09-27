@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'queued/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'queue'
+  spec.name = 'queued-ruby'
   spec.version = Queued::VERSION
   spec.files = Dir.glob('**/*')
   spec.require_paths = ['lib']
