@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.description = 'Queued client library for Ruby'
   spec.authors = ['Scott Nelson']
   spec.email = 'scott@scttnlsn.com'
-  spec.homepage = 'https://github.com/scttnlsn/queued-rb'
+  spec.homepage = 'https://github.com/scttnlsn/queued-ruby'
 
   spec.add_dependency 'faraday', ['>= 0.8', '< 0.10']
   spec.add_dependency 'faraday_middleware', ['>= 0.8', '< 0.10']
