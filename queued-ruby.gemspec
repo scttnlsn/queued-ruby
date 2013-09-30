@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Scott Nelson']
   spec.email = 'scott@scttnlsn.com'
   spec.homepage = 'https://github.com/scttnlsn/queued-ruby'
+  spec.license = 'MIT'
 
   spec.add_dependency 'faraday', ['>= 0.8', '< 0.10']
   spec.add_dependency 'faraday_middleware', ['>= 0.8', '< 0.10']
